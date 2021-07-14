@@ -16,20 +16,16 @@ body{
 
 .intro{
    
-   padding: 60px 30px;
-   color: rgb(133, 131, 131);
+   padding: 40px 20px;
+   color: rgb(83, 83, 102);
    margin-bottom: 15px;
    line-height: 1.5;
    text-align: center;
+   font-family: 'Fredericka the Great', cursive;
+  
+   
 }
-.intro h1 {
-   font-size: 18pt;
-   padding-bottom: 15px;
 
-}
-.intro p{
-   font-size: 14px;
-}
 
 .action{
    text-align: center;
@@ -126,4 +122,23 @@ code{
     border:1px solid #ddd;
     padding: 2px;
     border-radius: 2px;
+}
+.text{
+   color: #ddd;
+   font-size: medium;
+}
+.text1{
+   margin: 3rem;
+}
+#chart_div{
+   margin-left: 20rem;
+   
+}
+.card{
+   background-color: #141422;
+}
+
+.sign{
+   font-size: medium;
+   padding-left: 2rem;
 }
