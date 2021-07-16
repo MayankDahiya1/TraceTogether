@@ -4,14 +4,14 @@
   "description": "This a Covid Tracking App",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
     
   },
   "author": "Mayank Dahiya",
   "license": "ISC",
   "engines": {
-    "node": "14.17.1"
+    "node": "14.16.1"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
