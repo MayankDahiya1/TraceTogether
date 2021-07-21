@@ -53,16 +53,7 @@ a.btn:hover{
   margin-right: 10px;
 }
 
-.credit{
-    background: #141422!important;
-    padding: 12px;
-    font-size: 9pt;
-    text-align: center;
-    color: rgb(133, 131, 131);
-    margin-top: 40px;
-    text-align: center;
 
-}
 
 
 main{
@@ -141,4 +132,8 @@ code{
 .sign{
    font-size: medium;
    padding-left: 2rem;
+}
+.data{
+   font-size: 1.3rem;
+   font-family: 'Yomogi', cursive;
 }

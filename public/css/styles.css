@@ -450,7 +450,7 @@ html{
 	}
 }
 .clickSearch{
-  padding-left: 5rem;
+  padding-left: 7.5rem;
   font-size: 1rem;
   color: #d4d4d4ad;
   
@@ -461,32 +461,30 @@ html{
 
 }
 .confirmedCase{
-  width: 24%;
+  width: 34%;
   float: left;
   text-align: center;
   background-color: rgba(255, 0, 0, 0.082);
   color: red;
+  border-radius: 7px;
 }
-.activeCase{
-  width: 24%;
-  float: left;
-  text-align: center;
-  background-color: rgba(0, 0, 255, 0.103);
-  color: blue;
-}
+
+
 .recoveredCase{
-  width: 24%;
+  width: 33%;
   float: right;
   text-align: center;
   background-color: rgba(0, 128, 0, 0.116);
   color: green;
+  border-radius: 7px;
 }
 .deceasedCase{
-  width: 24%;
+  width: 33%;
   float: right;
   text-align: center;
   background-color: rgba(192, 192, 192, 0.151);
   color: silver;
+  border-radius: 7px;
 }
 .email{
   color: #e0e0e0;
