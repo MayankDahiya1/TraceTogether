@@ -450,11 +450,10 @@ html{
 	}
 }
 .clickSearch{
-  padding-left: 7.5rem;
-  font-size: 1rem;
+  padding-left: 5rem;
+  font-size: 1.5rem;
   color: #d4d4d4ad;
-  
-  
+
 }
 .click{
   font-family:  'Roboto Mono', monospace;
@@ -488,4 +487,8 @@ html{
 }
 .email{
   color: #e0e0e0;
+}
+.table{
+  margin-top: 5rem;
+  background-color:#1e1e30;
 }

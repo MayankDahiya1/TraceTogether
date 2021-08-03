@@ -23,6 +23,33 @@
           
           <div class="deceasedCase">Deceased<br><div class="data"><%=deaths1%></div></div>
           <div class="recoveredCase">Recovered<br><div class="data"><%=recovered1%></div></div>
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">State/UT</th>
+                <th scope="col">Confirmed</th>
+                <th scope="col">Active</th>
+                <th scope="col">Recovered</th>
+                <th scope="col">Deceased</th>
+              </tr>
+            </thead>
+            <tbody>
+              <%  for(let a=0;a<37;a++) { %>
+              <tr>
+              
+              
+                <th scope="row"><%=stateNames[a]%></th>
+                
+                <td class="red"><%=tableConfirmed[a]%></td>
+                <td class="blue"><%=tableActive[a]%></td>
+                <td class="green"><%=tableRecovered[a]%></td>
+                <td class="grey"><%=tableDeceased[a]%></td>
+              
+              </tr>
+              <%}%>
+            
+            </tbody>
+          </table>
         </div>
         
         <div class="rightbox">
