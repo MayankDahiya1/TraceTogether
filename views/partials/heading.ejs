@@ -6,7 +6,7 @@
     
     <title> Trace Together</title>
     <link rel="shortcut icon" href="/shield1.png" type="image/x-icon">
-	
+    
 	<script src="https://kit.fontawesome.com/6090ee786b.js" crossorigin="anonymous"></script>
 	
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -44,18 +44,22 @@
                  </div>
               </div>
               <div class="menu">
-                <div class="logo"><a href="/"style="text-decoration: none; color: inherit";>
+                <div class="logo"><a href="/home"style="text-decoration: none; color: inherit";>
                   TRACE TOGETHER
                   </a>
                 </div>
                 <div class="right_menu">
                   <ul>
                     <li><i class="fas fa-user"></i>
-                      <div class="profile_dd">
-                        <a href="/register" class="register" style="text-decoration: none; color: inherit";>  <div class="dd_item">Register</div></a>
-                         
-                      </div>
-                    </li>
+                      
+                    
+                    <div class="profile_dd">
+                      <a href="/profile" style="text-decoration:none ;" > <div class="dd_item">Profile</div></a>
+                     <a href="/Survey" style="text-decoration:none ;"><div class="dd_item">Survey</div></a> 
+                     
+                      <a href="/logout" style="text-decoration:none ;"> <div class="dd_item">Logout</div></a>
+                   </div>
+                  </li>
                   </ul>
                 </div>
               </div>
@@ -68,12 +72,12 @@
                         
                         <div class="profile_info">
                            <p>Welcome</p>
-                           <p class="profile_name">Team</p>
+                           <p class="profile_name"><%=Name%> </p>
                         </div>
                       </div>
                       <ul>
                         <li>
-                          <a href="/"  style="text-decoration: none; ";>
+                          <a href="/home"  style="text-decoration: none; ";>
                             <span class="icon"><i class="fas fa-home"></i></span>
                             <span class="title">Home</span>
                           </a>
@@ -84,22 +88,23 @@
                             <span class="title">Blog</span>
                           </a>
                         </li>
-                        <li>
-                          <a href="/about"  style="text-decoration: none; ";>
-                            <span class="icon"><i class="fas fa-question-circle"></i></span>
-                            <span class="title">About</span>
-                          </a>
-                        </li>
+                       
                         <li>
                           <a href="/resources"  style="text-decoration: none; ";>
                             <span class="icon"><i class="fas fa-book-open"></i></span>
-                            <span class="title">Resources</span>
+                            <span class="title">Analysis</span>
                           </a>
                         </li>
                         <li>
                           <a href="/contact"  style="text-decoration: none; ";>
                             <span class="icon"><i class="fas fa-phone-alt"></i></span>
-                            <span class="title">Contact Us</span>
+                            <span class="title">Inquiry</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/about"  style="text-decoration: none; ";>
+                            <span class="icon"><i class="fas fa-question-circle"></i></span>
+                            <span class="title">About</span>
                           </a>
                         </li>
                       </ul>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="shortcut icon" href="/heart.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div class="help"><h1>Help Us by Filling this Form</h1></div>
+    <div class="container">
+        <form method="post">
+      <label for="username">Enter Your Email</label>
+      <input type="text" name="emailForm" placeholder="Email.." required>
+          <label for="fname">Age</label>
+          <select  name="ageForm" required>
+            <option value="">Choose from Below</option>
+            <option value="teenAge">1-18</option>
+            <option value="middleAge">19-49</option>
+            <option value="Senior">Above 50</option>
+          </select>
+
+          <label for="fname">BMI</label>
+          <select  name="bmi" required>
+            <option value="">Choose from Below</option>
+            <option value="underweight">Less than 18.5</option>
+            <option value="normal">18.5-24.9</option>
+            <option value="overweight">25-29.9</option>
+            <option value="obese">More Than 30</option>
+          </select>
+      
+          <label for="lname">Are You Suffering From Covid-19</label><br><br>
+          <input type="radio" name="status" value="yes">Yes <input name="status" type="radio" value="no">No
+      <br><br>
+          <label for="country">Gender</label>
+          <select id="country" name="genderForm" required>
+            <option value="">Choose from Below</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+      
+          <label for="symptom">Which of the Following Symptoms You Had</label><br><br>
+          <input type="checkbox" name="breatheForm" value="breathe"> Breathing Problem<br>
+          <input type="checkbox" name="coughForm" value="cough"> Chough <br>
+        <input type="checkbox" name="tasteForm" value="taste"> Loss in Taste <br>
+        <input type="checkbox" name="smellForm" value="smell"> Loss in Smell <br><br>
+        
+        <label for="symptom">Are You</label><br>
+        <select  name="foodType" required>
+            <option value="">Choose from Below</option>
+            <option value="non-veg">Non-Vegetarian</option>
+            <option value="veg">Vegetarian</option>
+            <option value="egg">Eggetarian(can Eat Eggs)</option>
+          </select>
+      <br>
+
+        <label for="symptom">Are You Allergic To</label><br><br>
+<input type="checkbox" name="milkAllergy" value="milk"> Milk Products<br>
+<input type="checkbox" name="peanutAllergy" value="peanuts"> Peanuts<br>
+<input type="checkbox" name="eggAllergy" value="egg"> Eggs<br><br>
+      
+<label for="fname">How Often Do you do Workout</label>
+          <select  name="workout" required>
+            <option value="">Choose from Below</option>
+            <option value="never">Never</option>
+            <option value="light">Light</option>
+            <option value="moderate">Moderate </option>
+            <option value="intense">Intense </option>
+          </select>
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+</body>
+</html>

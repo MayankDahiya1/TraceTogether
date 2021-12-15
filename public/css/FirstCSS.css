@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.container{
+height: 100%;
+align-content: center;
+}
+.rightContainer h1{
+    font-size: 3rem;
+    background-color: #000000a6;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 2rem auto auto auto;
+}
+.quote{
+    width: 20rem;
+    font-size: 1rem;
+    font-family:'Courier New', Courier, monospace;
+    margin: 4rem 3rem auto 3rem;
+    background-color: #000000a4;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+.rotate{
+    margin: 3rem auto auto 9rem;
+    animation: rotation 8s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.rightContainer{
+    color: rgb(255, 255, 255);
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 0, 0.541);
+    width: 30rem;
+    margin-left: 20rem;
+    
+}
+.Admin{
+    margin-left: 9rem;
+    
+}
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+#signButton{
+    background-color: #FFC312;
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 0.25rem;
+    margin-left: 16rem;
+    margin-top: 1rem;
+    box-shadow: none;
+
+}
+#signButton:hover{
+background-color: white;
+}
+.confirmedCase{
+    width: 34%;
+    float: left;
+    text-align: center;
+    height: 6rem;
+    color: red;
+    border-radius: 7px;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+  
+  }
+  .confirmedCase:hover{
+    background-color: rgba(255, 0, 0, 0.356);
+  }
+  
+  
+  .recoveredCase{
+    width: 33%;
+    float: right;
+    text-align: center;
+    height: 6rem;
+    color: green;
+    border-radius: 7px;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .recoveredCase:hover{
+    background-color: rgba(0, 128, 0, 0.438);
+  }
+  .deceasedCase{
+    width: 33%;
+    float: right;
+    text-align: center;
+    height: 6rem;
+    color: silver;
+    border-radius: 7px;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .deceasedCase:hover{
+    background-color: rgba(192, 192, 192, 0.664);
+  }
+  .hwrap {
+    overflow: hidden; /* HIDE SCROLL BAR */
+    background: rgba(12, 12, 12, 0.562);
+    color: azure;
+  }
+   
+  /* (B) MOVING TICKER WRAPPER */
+  .hmove { display: flex; }
+  
+  /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+  .hitem {
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+  }
+   
+  /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+  /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+  @keyframes tickerh {
+    0% { transform: translate3d(100%, 0, 0); }
+    100% { transform: translate3d(-400%, 0, 0); }
+  }
+  .hmove { animation: tickerh linear 50s infinite; }
+  .hmove:hover { animation-play-state: paused; }

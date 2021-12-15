@@ -1,6 +1,20 @@
 <%-include("partials/heading")%>
 
-
+<script>
+  window.onload = function() {
+    //considering there aren't any hashes in the urls already
+    if(!window.location.hash) {
+        //setting window location
+        window.location = window.location + '#loaded';
+        //using reload() method to reload web page
+        window.location.reload();
+    }
+}
+  
+clientDB.blogs.find(function(err,blog){
+  let blogging = blog.length;
+})
+</script>
       <div class="container">
           
           	<header class="intro">
@@ -8,9 +22,20 @@
 	
 	</header>
           
-          
-        <dvi class="box"></dvi>
- 
+          <% for(let i=0; i<blogMain.length;i++) {%> 
+            <br>
+            <br>
+        <div class="boxBlog">
+          <div class="blogHeading"><%= blogMain[i]  %> </div>
+          <div class="blogContent"><p><%= blogContent[i]  %> </p>
+
+           
+        </div>
+        <br>
+        <br> 
+        <hr>
+ <% } %>
+
       </div>
   </div>
   

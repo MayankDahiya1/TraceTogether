@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>Admin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/admin.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="/admin1.png" style="border-radius:1rem ;">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;"><br>
+  <div class="w3-container">
+    
+    <img src="/admin.jpg" style="width:100%;" class="w3-round"><br><br>
+    <h4 class="w3-padding-0"><b>Admin</b></h4>
+    
+  </div>
+  <a href="/adminMain" class="w3-padding ">DASHBROAD</a> 
+  <a href="/adminChild" class="w3-padding">DETAIL</a> 
+  <a href="/deleteBlog" class="w3-padding " >DELETE OR DETAIL OF BLOG</a>
+  <a href="/addDoctor" class="w3-padding">ADD DOCTOR</a> 
+  <a href="/addTrainer" class="w3-padding w3-text-teal">ADD TRAINER</a>
+  <a href="/addCoach" class="w3-padding">ADD NUTRITION COACH</a>
+  <a href="/addBlog" class="w3-padding">ADD BLOG DETAIL</a>
+  <a href="/" class="w3-padding logout">LOGOUT</a>
+ 
+</nav>
+
+
+
+
+
+<div class="w3-main" style="margin-left:300px">
+
+ 
+  <header class="w3-container">
+    
+    <h1><b>ADD TRAINER'S DETAILS</b></h1>
+    
+  </header>
+  <form  method="post">
+<div class="doctorName">
+    <label for="name">Name</label>
+    <input id="doctorName1" type="text" name="trainerName" placeholder="Enter Name...">
+</div>
+<div class="doctorName">
+    <label for="gender">Gender</label>
+    <select name="gender" >
+        <option value=""> Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Others">Others</option>
+    </select>
+</div>
+<div class="doctorName">
+    <label for="phone">Number</label>
+    <input id="doctorName1" type="number" name="phone" placeholder="Enter Phone No.." maxlength="10">
+</div>
+
+<div class="doctorName">
+    <label for="Experience">Experience</label>
+    <select name="Experience" id="doctorName1">
+        <option value="">Experience</option>
+    <option value="1-2 Year">1-2 Year</option>
+    <option value="2-3 Year">2-4 Year</option>
+    <option value="Above 5 Years">Above 5 Years</option>
+    
+</select>
+</div>
+
+<div class="doctorName">
+    <label for="phone">Expert In</label>
+    <input id="doctorName1" type="text" name="expert" placeholder="Expertise In" >
+</div>
+ 
+<div class="doctorName">
+    <label for="phone">Address</label>
+    <input id="doctorAddress" type="text" name="address" placeholder="Enter Address" >
+</div>
+
+<input type="submit" value="Submit" class="submitButton" >
+  
+</form>
+  
+ 
+
+
+</div>
+
+<script>
+
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+</script>
+
+</body>
+</html>

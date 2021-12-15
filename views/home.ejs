@@ -1,4 +1,137 @@
-<%-include("partials/heading")%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <title> Trace Together</title>
+    <link rel="shortcut icon" href="/shield1.png" type="image/x-icon">
+    
+	
+	<script src="https://kit.fontawesome.com/6090ee786b.js" crossorigin="anonymous"></script>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/countries/in/in-all.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@700&family=Fredericka+the+Great&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+   <link rel="stylesheet" href="css/bootstrap-social.css">
+
+   <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles1.css">
+    
+   
+	
+    </head>
+    <body>
+      <script lang="javascript" >
+        
+        
+        
+        
+window.onload = function() {
+   
+    if(!window.location.hash) {
+        
+        window.location = window.location + '#loaded';
+       
+        window.location.reload();
+    }
+    
+}
+
+
+      </script>
+        <div class="wrapper active">
+            <div class="top_navbar">
+              <div class="hamburger">
+                 <div class="hamburger__inner">
+                   <div class="one"></div>
+                   <div class="two"></div>
+                   <div class="three"></div>
+                 </div>
+              </div>
+              <div class="menu">
+                <div class="logo"><a href="/home"style="text-decoration: none; color: inherit";>
+                  TRACE TOGETHER
+                  </a>
+                </div>
+                <div class="right_menu">
+                  <ul>
+                    <li><i class="fas fa-user"></i>
+                      
+                    
+                    <div class="profile_dd">
+                    <a href="/profile" style="text-decoration:none ;" ><div class="dd_item">Profile</div></a> 
+                     <a href="/Survey" style="text-decoration:none ;"><div class="dd_item">Survey</div></a> 
+                  
+                      <a href="/logout" style="text-decoration:none ;"> <div class="dd_item">Logout</div></a>
+                   </div>
+                  </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+              
+            <div class="main_container">
+                <div class="sidebar">
+                    <div class="sidebar__inner">
+                      <div class="profile">
+                        
+                        <div class="profile_info">
+                           <p>Welcome</p>
+                           <p class="profile_name"><%=Name%> </p>
+                        </div>
+                      </div>
+                      <ul>
+                        <li>
+                          <a href="/home"  style="text-decoration: none; ";>
+                            <span class="icon"><i class="fas fa-home"></i></span>
+                            <span class="title">Home</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/blog"  style="text-decoration: none; ";>
+                            <span class="icon"><i class="fas fa-rss"></i></span>
+                            <span class="title">Blog</span>
+                          </a>
+                        </li>
+                        
+                        <li>
+                          <a href="/resources"  style="text-decoration: none; ";>
+                            <span class="icon"><i class="fas fa-book-open"></i></span>
+                            <span class="title">Analysis</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/contact"  style="text-decoration: none; ";>
+                            <span class="icon"><i class="fas fa-phone-alt"></i></span>
+                            <span class="title">Inquiry</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/about"  style="text-decoration: none; ";>
+                            <span class="icon"><i class="fas fa-question-circle"></i></span>
+                            <span class="title">About</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
 
 
       <div class="container">
@@ -13,16 +146,17 @@
           <div class="clickSearch"><p class="click"><%=state%></p></div>
           
           <form method="post"  class="search-bar" >
-            <input type="search" name="search" pattern=".*\S.*" required >
+            <input type="search" id="search"  placeholder="" name="search" pattern=".*\S.*" required >
             <button class="search-btn" type="submit">
               <span>Search</span>
             </button>
           </form>
-          <div class="confirmedCase">Confirmed<br><div class="data"><%=confirmed1%></div></div>
+          <a href=""><div class="confirmedCase">Confirmed<br><div class="data"><%=confirmed1%></div></div></a>
           
           
-          <div class="deceasedCase">Deceased<br><div class="data"><%=deaths1%></div></div>
-          <div class="recoveredCase">Recovered<br><div class="data"><%=recovered1%></div></div>
+         <a href=""> <div class="deceasedCase">Deceased<br><div class="data"><%=deaths1%></div></div></a>
+          <a href=""><div class="recoveredCase">Recovered<br><div class="data"><%=recovered1%></div></div></a>
+          <div class="scroll">
           <table class="table table-dark">
             <thead>
               <tr>
@@ -34,7 +168,7 @@
               </tr>
             </thead>
             <tbody>
-              <%  for(let a=0;a<37;a++) { %>
+              <%  for(let a=0;a<stateNames.length;a++) { %>
               <tr>
               
               
@@ -51,9 +185,31 @@
             </tbody>
           </table>
         </div>
+        </div>
         
         <div class="rightbox">
+          
           <div class="india">India</div>
+          <div class="treatmentInfo">
+            <div class="Info"><h4>Information About Treatment</h4><br><s>(According to Our Survey)</s></div>
+         <a href="https://www.business-standard.com/multimedia/video-gallery/life/what-medicines-should-you-take-if-you-have-covid-19-let-s-find-out-123745.htm"> <div class="Allopathy"><img src="/allopathy.png" width="50px" height="50px"><br><div class="aLength"><%=allopathyLength%>%</div>Allopathy</div></a>
+         <a href="https://trialsjournal.biomedcentral.com/articles/10.1186/s13063-021-05071-5"> <div class="Homeopathy"><img src="/homeopathy.png" width="50px" height="50px"><br><div class="aLength"><%=homeopathyLength%>%</div>Homeopathy</div></a>
+         <a href=""><div class="Others"><img src="/Other.png" width="50px" height="50px"><br><div class="aLength"><%=othersLength%>%</div>Others</div></a>
+         <a href="https://www.news18.com/news/lifestyle/covid19-ayush-ministry-ayurvedic-treatment-myupchar-2941383.html"> <div class="Ayurvedic"><img src="/Ayurvedic.png" width="50px" height="50px"><br><div class="aLength"><%=ayurvedicLength%>%</div>Ayurvedic</div></a>
+          
+        </div>
+        <div class="common">
+        <div class="Info"><h4>Common Symptoms</h4></div>
+              <div class="cough"><img width="50px" height="60px" src="/cough.png"><br>Cough<br><%=coughLength%>%</div>
+              <div class="taste"><img width="50px" height="60px" src="/lossTaste.png"><br>Loss of Taste<br><%=tasteLength%>%</div>
+              <div class="smell"><img width="50px" height="60px" src="/smell.png"><br>Loss of Smell<br><%=smellLength%>%</div>
+              <div class="bodyache"><img width="50px" height="60px" src="/stomachache.png"><br>Bodyache<br><%=bodyacheLength%>%</div>
+              <div class="tiredness"><img width="50px" height="60px" src="/dizziness.png"><br>Tiredness<br><%=tirednessLength%>%</div>
+      </div>
+      
+
+
+
         </div>
  
       </div>

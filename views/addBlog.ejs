@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title>Admin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/admin.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="/admin1.png" style="border-radius:1rem ;">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;"><br>
+  <div class="w3-container">
+    
+    <img src="/admin.jpg" style="width:100%;" class="w3-round"><br><br>
+    <h4 class="w3-padding-0"><b>Admin</b></h4>
+    
+  </div>
+  <a href="/adminMain" class="w3-padding">DASHBROAD</a> 
+  <a href="/adminChild" class="w3-padding">DETAIL</a> 
+  <a href="/deleteBlog" class="w3-padding " >DELETE OR DETAIL OF BLOG</a>
+  <a href="/addDoctor" class="w3-padding">ADD DOCTOR</a> 
+  <a href="/addTrainer" class="w3-padding">ADD TRAINER</a>
+  <a href="/addCoach" class="w3-padding">ADD NUTRITION COACH</a>
+  <a href="/addBlog" class="w3-padding w3-text-teal">ADD BLOG DETAIL</a>
+  <a href="/" class="w3-padding logout">LOGOUT</a>
+ 
+</nav>
+
+
+
+
+
+<div class="w3-main" style="margin-left:300px">
+
+ 
+  <header class="w3-container">
+   
+    <h1><b>ADD BLOG</b></h1>
+    
+  </header>
+  <form  method="post">
+<div class="doctorName">
+    <label for="name">Blog Heading</label>
+    <input id="doctorName1" type="text" name="blogHeading" placeholder="Enter Blog Heading..">
+</div>
+
+ 
+<div class="doctorName">
+    <label for="phone">Blog Content</label>
+    <textarea class="doctorAddress"  name="blogContent"  cols="30" rows="10" placeholder="Enter Text Here..."></textarea>
+</div>
+
+<input type="submit" value="Add" class="submitButton" >
+
+</form>
+ 
+
+
+</div>
+
+
+
+</body>
+</html>

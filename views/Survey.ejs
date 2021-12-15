@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="/android-chrome-192x192.png" type="image/x-icon">
+		
+		<title>
+
+		Survey
+	</title>
+
+	<link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+	<h1>Survey For Covid-19</h1>
+
+	<form id="form" method="POST" action="/Survey">
+
+		
+
+		<div class="form-control">
+			<label for="age" id="label-age" >
+				Age
+			</label>
+
+			
+			<input type="text"
+				id="age" name="age"
+				placeholder="Enter your age" required />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Which option best describes you?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role" required>
+				<option value="2">Choose One Option</option>
+				<option value="2">Beats Covid 19</option>
+				<option value="2">Nevered Had One</option>
+				<option value="2">
+					Still Recovering
+				</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Which Treatement Helps You Recovering(If Recovered)
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="checkbox"
+					id="recommed"
+					name="Allopathy" value="1">Allopathy</input>
+			</label>
+			<label for="recommed-2">
+				<input type="checkbox"
+					id="recommed"
+					name="Ayurvedic" value="1" >Ayurvedic</input>
+			</label>
+			<label for="recommed-3">
+				<input type="checkbox"
+					id="recommed"
+					name="Homeopathy" value="1">Homeopathy</input>
+			</label>
+			<label for="recommed-4">
+				<input type="checkbox"
+					id="recommed"
+					name="Others" value="1">Others</input>
+			</label>
+			<label for="recommed-5">
+				<input type="checkbox"
+					id="recommed"
+					name="Still" value="1">Still Recovering/Never Had Covid-19</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>Symptoms
+				<small>(Check all that apply)(If Had Covid-19)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1">
+				<input type="checkbox"name="cough" value="1">Cough</input></label>
+			
+			<label for="inp-2">
+				<input type="checkbox"
+					name="taste" value="1">Loss of Taste</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="smell" value="1">Loss of Smell</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="bodyache" value="1">Bodyache</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="tiredness" value="1">Tiredness</input></label>
+			
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here" required>
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button class="submit" type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>

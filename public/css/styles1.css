@@ -22,7 +22,7 @@ body{
    line-height: 1.5;
    text-align: center;
    font-family: 'Fredericka the Great', cursive;
-  
+  color: #f2f2f2;
    
 }
 
@@ -134,22 +134,186 @@ code{
    padding-left: 2rem;
 }
 .data{
-   font-size: 1.3rem;
+   font-size: 1rem;
    font-family: 'Yomogi', cursive;
+   padding-top: 1rem;
 }
 .green{
    background-color:rgba(2, 65, 2, 0.219);
-   color: green;
+   color: white;
 }
 .red{
    background-color: rgba(255, 0, 0, 0.11);
-   color: red;
+   color: white;
 }
 .blue{
    background-color: rgba(0, 0, 255, 0.199);
-   color: blue;
+   color: white;
 }
 .grey{
    background-color: rgba(128, 128, 128, 0.164);
-   color: grey;
+   color: white;
 }
+td{
+   font-size: 0.65rem;
+}
+th{
+   font-size: 0.55rem;
+}
+.pincode{
+   background-color: grey;
+   color: #f2f2f2;
+   border-radius: 1rem;
+}
+.Allopathy{
+   width: 25%;
+   float: left;
+   text-align: center;
+   height: 7rem;
+   
+   border-radius: 7px;
+   padding-top: 1rem;
+   margin-bottom: 1rem;
+   color: grey;
+   
+}
+.Allopathy:hover{
+   background-color:rgba(128, 128, 128, 0.39);
+}
+.Homeopathy{
+   width: 25%;
+  float: left;
+  text-align: center;
+  height: 7rem;
+
+  border-radius: 7px;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  color: pink;
+}
+.Homeopathy:hover{
+   background-color: rgba(255, 192, 203, 0.5);
+}
+.Ayurvedic{
+   width: 25%;
+  float: right;
+  text-align: center;
+  height: 7rem;
+ 
+  border-radius: 7px;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  color: green;
+  
+}
+.Ayurvedic:hover{
+   background-color: rgba(0, 128, 0, 0.452);
+}
+.Others{
+   width: 25%;
+  float: right;
+  text-align: center;
+  height: 7rem;
+  
+  
+  border-radius: 7px;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  color: whitesmoke;
+  
+}
+.Others:hover{
+   background-color: rgba(255, 255, 255, 0.548);
+}
+.treatmentInfo{
+   padding-top: 2rem;
+}
+.Info{
+   text-align: center;
+   color: white;
+}
+.columnAbout {
+   float: left;
+   width: 33.3%;
+   margin-bottom: 16px;
+   padding: 0 8px;
+ }
+ .cardAbout {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   margin: 8px;
+ }
+ .about-section {
+   padding: 50px;
+   text-align: center;
+   background-color: #474e5d;
+   color: white;
+ }
+ .containerAbout {
+   padding: 0 16px;
+ }
+ 
+ .containerAbout::after, .row::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+ .buttonAbout {
+   border: none;
+   outline: 0;
+   display: inline-block;
+   padding: 8px;
+   color: white;
+   background-color: #000;
+   text-align: center;
+   cursor: pointer;
+   width: 100%;
+ }
+ 
+ .buttonAbout:hover {
+   background-color: #555;
+ }
+ .whole{
+    padding-top: 3rem;
+ }
+ .headingAbout{
+    padding-bottom: 2rem;
+ }
+ .common{
+    padding-top: 14rem;
+ }
+ hr{
+   display: block;
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+   margin-left: auto;
+   margin-right: auto;
+   border-style: inset;
+   border-width: 1px;
+ }
+ .scroll{
+   margin:5px;
+   padding:5px;
+   width: auto;
+   height: 600px;
+   overflow: auto;
+   text-align:left;
+  
+ }
+ ::-webkit-scrollbar {
+   width: 10px;
+ }
+ 
+ /* Track */
+ ::-webkit-scrollbar-track {
+   background: #f1f1f1; 
+ }
+  
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: rgb(7, 15, 85); 
+ }
+ 
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   background: rgb(21, 22, 107); 
+ }

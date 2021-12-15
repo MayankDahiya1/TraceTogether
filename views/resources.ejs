@@ -4,13 +4,52 @@
       <div class="container">
           
           	<header class="intro">
-	<h1>Resources We Used</h1>
+	<h1>Our Suggestion</h1>
 	
 	</header>
           
           
-        <dvi class="box"></dvi>
- 
+        <div class="box">
+ <div class="left-box">
+   <h2>Yoga</h2>
+   <% for(let a=0;a<yogaHeading.length;a++) { %>
+  
+   <div class="yogaDetail">
+     <div class="vidio">
+      
+      <video width="300px" height="300px" controls src="<%= yogaGif[a] %> "></video>
+     </div>
+    
+     <div class="yogaHeading"><%=yogaHeading[a]%></div>
+     <div class="yogaContent"><p><%=yogaDetails[a]%></p></div>
+
+   </div>
+   <% } %>
+ </div>
+ <div class="right-box">
+   <h2>Nutrients</h2>
+   <div class="protein">Protein<div class="proteinImage"><img width="150px" height="150px" src="/protein.png" alt="protein"></div><div class="percentage"><%= protein %> %</div></div>
+   <div class="carb">Carbohydrates <div class="carbsImage"><img width="150px" height="150px" src="/carbs.png" alt="carbohydrates"></div><div class="percentage"><%= carb %> %</div></div>
+   <div class="fats">Fats <div class="fatImage"><img width="150px" height="150px" src="/fats.png" alt="fats"></div><div class="percentage"><%= fat %> %</div></div>
+   <div class="balancedHeading"><h3>Balanced Diet Recipe</h3></div>
+   <div class="recipeFull">
+   <% for(let a=0;a<recipeIngredients.length;a++) { %> 
+ <div class="recipeImage" ><img class="recipeImage2" width="200px" height="200px" src="<%= recipeImage[a] %> " alt=""></div>
+   <div class="recipeHeading"><%= recipeHeading[a] %> </div>
+   <div class="recipeIngrediant"><h4>Ingrediant</h4><p><%- recipeIngredients[a] -%> </p></div>
+ <div class="recipe"><h4>Recipe</h4><p><%- recipe[a] -%> </p></div>
+<div class="countKcal">Kcal <br><%= kcalCount[a] %>gm </div>
+<div class="countFat">Fat<br> <%= fatCount[a] %> gm</div>
+<div class="countCarb">Carb <br><%= carbCount[a] %> gm</div>
+<div class="countProtein">Protein <br><%= proteinCount[a] %> gm</div>
+<div class="countFiber">Fiber <br><%= fibreCount[a] %> gm</div>
+<br>
+<br>
+<br>
+<br>
+<% } %> 
+</div>  
+</div>
       </div>
   </div>
   

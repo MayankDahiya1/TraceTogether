@@ -1,15 +1,85 @@
 <%-include("partials/heading")%>
 
-
+<script lang="javascript">
+        
+  window.onload = function() {
+      //considering there aren't any hashes in the urls already
+      if(!window.location.hash) {
+          //setting window location
+          window.location = window.location + '#loaded';
+          //using reload() method to reload web page
+          window.location.reload();
+      }
+  }
+        </script>
       <div class="container">
           
           	<header class="intro">
-	<h1>Contact Us</h1>
+	<h1>Inquiry</h1>
 	
 	</header>
           
           
-        <dvi class="box"></dvi>
+        <div class="box">
+          <div class="upperBox">
+            <div class="docHeading"><h2>Doctors</h2></div>
+            <% for(let i=0;i<doctorNameArray.length;i++){ %> 
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="/doctor.jpg"class="images" alt="Avatar" style="width:200px;height:200px;">
+                  <h1 class="fontSize"><%= doctorNameArray[i] %> </h1>
+                </div>
+                <div class="flip-card-back">
+                  <p><%= doctorGenderArray[i] %> </p>
+                  <p><%= doctorQualificationArray[i] %> </p>
+                  <p><%= doctorPhoneArray[i] %> </p>
+                  <p><%= doctorAddressArray[i] %> </p>
+                </div>
+              </div>
+            </div>
+            <% } %> 
+          </div>
+          <div class="middleBox">
+            <div class="docHeading"><h2>Trainers</h2></div>
+            <% for(let i=0;i<trainerNameArray.length;i++){ %> 
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="/trainer.jpg" class="images"alt="Avatar" style="width:200px;height:200px;">
+                  <h1 class="fontSize"><%= trainerNameArray[i] %> </h1>
+                </div>
+                <div class="flip-card-back">
+                  <p><%= trainerGenderArray[i] %> </p>
+                  <p><%= trainerExperienceArray[i] %> </p>
+                  <p><%= trainerPhoneArray[i] %> </p>
+                  <p><%= trainerAddressArray[i] %> </p>
+                </div>
+              </div>
+            </div>
+            <% } %> 
+          </div>
+          <div class="lowerBox">
+            <div class="docHeading"><h2>Nutritionist</h2></div>
+            <% for(let i=0;i<coachNameArray.length;i++){ %> 
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="/coach.jpg" class="images"alt="Avatar" style="width:200px;height:200px;">
+                  <h1 class="fontSize"><%= coachNameArray[i] %></h1>
+                </div>
+                <div class="flip-card-back">
+                  
+                  <p><%= coachGenderArray[i] %> </p>
+                  <p><%= coachExperienceArray[i] %> </p>
+                  <p><%= coachPhoneArray[i] %> </p>
+                  <p><%= coachAddressArray[i] %> </p>
+                </div>
+              </div>
+            </div>
+            <% } %> 
+          </div>
+        </div>
  
       </div>
   </div>
