@@ -122,20 +122,7 @@ var coachGenderArray = [];
 var blogMain = [];
 var blogContent = [];
 var covidNews =[];
-var NodeGeocoder = require('node-geocoder');
 
-var options = {
-  provider: 'opencage',
-  httpAdapter: 'https', // Default
-  apiKey: "bdc9d1fca89d4a34af2780f2cf1054c0", // for Mapquest, OpenCage, Google Premier
-  formatter: 'json' // 'gpx', 'string', ...
-};
-
-var geocoder = NodeGeocoder(options);
-
-geocoder.reverse({lat:28.59, lon:77.32}, function(err, res) {
-
-});
 const session = require('express-session');
 const passport = require("passport");
 const passportLocal = require("passport-local");
@@ -146,7 +133,7 @@ const states =[];
 const app = express();
 const err = "Please Search Correct State";
 const commaNumber = require("comma-number");
-const { SSL_OP_NO_TLSv1_1 } = require('constants');
+const constants = require('constants');
 const { response } = require('express');
 const err1= "Error";
 
@@ -256,7 +243,6 @@ const Blog = new mongoose.model("Blog",blogSchema);
 passport.use(Client.createStrategy());
 passport.serializeUser(Client.serializeUser());
 passport.deserializeUser(Client.deserializeUser());
-
 
 
 Blog.find(function(err,blog){
