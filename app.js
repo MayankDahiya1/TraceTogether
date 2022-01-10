@@ -155,7 +155,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-mongoose.connect("mongodb://localhost:27017/clientDB", {useNewUrlParser: true , useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://mayank:dahnkot1@cluster0.a3di3.mongodb.net/clientDB?retryWrites=true&w=majority", {useNewUrlParser: true , useUnifiedTopology: true});
 
 mongoose.set("useCreateIndex", true);
 const blogSchema = new mongoose.Schema({
